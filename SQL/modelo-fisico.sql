@@ -1,18 +1,18 @@
 CREATE TABLE regioes (
     id_regiao NUMBER GENERATED ALWAYS as IDENTITY(START with 1 INCREMENT by 1),
-    nm_regiao VARCHAR NOT NULL,
+    nm_regiao VARCHAR2(50) NOT NULL,
     CONSTRAINT regioes_pk PRIMARY KEY (id_regiao)
 );
 
 CREATE TABLE doencas (
     id_doenca NUMBER GENERATED ALWAYS as IDENTITY(START with 1 INCREMENT by 1),
-    nm_doenca VARCHAR NOT NULL,
+    nm_doenca VARCHAR2(50) NOT NULL,
     CONSTRAINT doencas_pk PRIMARY KEY(id_doenca)
 );
 
 CREATE TABLE zonas (
     id_zona NUMBER GENERATED ALWAYS as IDENTITY(START with 1 INCREMENT by 1),
-    nm_zona VARCHAR NOT NULL,
+    nm_zona VARCHAR2(50) NOT NULL,
     CONSTRAINT zonas_pk PRIMARY KEY(id_zona)
 );
 

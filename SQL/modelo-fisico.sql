@@ -31,7 +31,7 @@ CREATE TABLE dados_monitoramento (
     id_zona NUMBER NOT NULL,
     dt_registro DATE NOT NULL,
     ds_sexo CHAR(1) NOT NULL,
-    is_gestante BOOLEAN NOT NULL,
+    is_gestante CHAR(1) NOT NULL,
     nr_casos_confirmados NUMBER NOT NULL,
     nr_casos_suspeitos NUMBER NOT NULL,
     nr_obitos NUMBER NOT NULL,

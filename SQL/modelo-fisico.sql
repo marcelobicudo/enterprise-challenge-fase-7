@@ -1,30 +1,30 @@
 CREATE TABLE regioes (
-    id_regiao NUMBER NOT NULL AUTO_INCREMENT,
+    id_regiao NUMBER GENERATED ALWAYS as IDENTITY(START with 1 INCREMENT by 1),
     nm_regiao VARCHAR NOT NULL,
-    CONSTRAINT regioes_pk PRIMARY KEY(id_regiao)
+    CONSTRAINT regioes_pk PRIMARY KEY (id_regiao)
 );
 
 CREATE TABLE doencas (
-    id_doenca NUMBER NOT NULL AUTO_INCREMENT,
+    id_doenca NUMBER GENERATED ALWAYS as IDENTITY(START with 1 INCREMENT by 1),
     nm_doenca VARCHAR NOT NULL,
     CONSTRAINT doencas_pk PRIMARY KEY(id_doenca)
 );
 
 CREATE TABLE zonas (
-    id_zona NUMBER NOT NULL AUTO_INCREMENT,
+    id_zona NUMBER GENERATED ALWAYS as IDENTITY(START with 1 INCREMENT by 1),
     nm_zona VARCHAR NOT NULL,
     CONSTRAINT zonas_pk PRIMARY KEY(id_zona)
 );
 
 CREATE TABLE faixas_etarias (
-    id_faixa_etaria NUMBER NOT NULL AUTO_INCREMENT,
+    id_faixa_etaria NUMBER GENERATED ALWAYS as IDENTITY(START with 1 INCREMENT by 1),
     vl_idade_inicial NUMBER NOT NULL,
     vl_idade_final NUMBER NOT NULL,
     CONSTRAINT faixas_etarias_pk PRIMARY KEY(id_faixa_etaria)
 );
 
 CREATE TABLE dados_monitoramento (
-    id_monitoramento NUMBER NOT NULL AUTO_INCREMENT,
+    id_monitoramento NUMBER GENERATED ALWAYS as IDENTITY(START with 1 INCREMENT by 1),
     id_regiao NUMBER NOT NULL,
     id_doenca NUMBER NOT NULL,
     id_faixa_etaria NUMBER NOT NULL,

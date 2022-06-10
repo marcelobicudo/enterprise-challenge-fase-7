@@ -9,6 +9,10 @@ public class Zona {
         this.nmZona = nmZona;
     }
 
+    public Zona() {
+
+    }
+
     public int getIdZona() {
         return idZona;
     }

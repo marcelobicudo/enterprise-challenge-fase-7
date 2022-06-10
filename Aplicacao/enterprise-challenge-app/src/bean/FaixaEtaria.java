@@ -11,6 +11,10 @@ public class FaixaEtaria {
         this.vlIdadeFinal = vlIdadeFinal;
     }
 
+    public FaixaEtaria() {
+
+    }
+
     public int getIdFaixaEtaria() {
         return idFaixaEtaria;
     }

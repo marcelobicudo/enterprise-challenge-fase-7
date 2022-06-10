@@ -9,6 +9,10 @@ public class Doenca {
         this.nmDoenca = nmDoenca;
     }
 
+    public Doenca() {
+
+    }
+
     public int getIdDoenca() {
         return idDoenca;
     }

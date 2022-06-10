@@ -9,13 +9,13 @@ public class DadosMonitoramento {
     private int idFaixaEtaria;
     private int idZona;
     private Date dtRegistro;
-    private char dsSexo;
+    private String dsSexo;
     private boolean isGestante;
     private int nrCasosConfirmados;
     private int nrCasosSuspeitos;
     private int nrObitos;
 
-    public DadosMonitoramento(int idMonitoramento, int idRegiao, int idDoenca, int idFaixaEtaria, int idZona, Date dtRegistro, char dsSexo, boolean isGestante, int nrCasosConfirmados, int nrCasosSuspeitos, int nrObitos) {
+    public DadosMonitoramento(int idMonitoramento, int idRegiao, int idDoenca, int idFaixaEtaria, int idZona, Date dtRegistro, String dsSexo, boolean isGestante, int nrCasosConfirmados, int nrCasosSuspeitos, int nrObitos) {
         this.idMonitoramento = idMonitoramento;
         this.idRegiao = idRegiao;
         this.idDoenca = idDoenca;
@@ -27,6 +27,10 @@ public class DadosMonitoramento {
         this.nrCasosConfirmados = nrCasosConfirmados;
         this.nrCasosSuspeitos = nrCasosSuspeitos;
         this.nrObitos = nrObitos;
+    }
+
+    public DadosMonitoramento() {
+
     }
 
     public int getIdMonitoramento() {
@@ -77,11 +81,11 @@ public class DadosMonitoramento {
         this.dtRegistro = dtRegistro;
     }
 
-    public char getDsSexo() {
+    public String getDsSexo() {
         return dsSexo;
     }
 
-    public void setDsSexo(char dsSexo) {
+    public void setDsSexo(String dsSexo) {
         this.dsSexo = dsSexo;
     }
 

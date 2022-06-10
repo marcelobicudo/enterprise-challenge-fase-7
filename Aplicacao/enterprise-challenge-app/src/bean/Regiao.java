@@ -9,6 +9,10 @@ public class Regiao {
         this.nmRegiao = nmRegiao;
     }
 
+    public Regiao () {
+
+    }
+
     public int getIdRegiao() {
         return idRegiao;
     }

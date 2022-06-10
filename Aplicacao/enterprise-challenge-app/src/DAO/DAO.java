@@ -24,9 +24,8 @@ public class DAO {
     private void openConnection() {
         try {
             if(this.conn == null) {
-                this.conn = DriverManager.getConnection("jdbc:oracle:thin:@oracle.fiap.com.br:1521:ORCL", "RM92031", "170284");
+                this.conn = DriverManager.getConnection("jdbc:oracle:thin:@oracle.fiap.com.br:1521:ORCL", "rm92248", "100702");
             }
-            System.out.println("Conexão está aberta");
         } catch (SQLException e) {
             // TODO Auto-generated catch block
             e.printStackTrace();
